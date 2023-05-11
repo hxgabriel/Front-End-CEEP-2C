@@ -61,3 +61,11 @@ top: -20px;
 font-size: 20px;
 color: dodgerblue;
 }
+
+#data_nascimento
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  outline: none
+  font-size: 20px,
+}
