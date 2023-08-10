@@ -39,7 +39,7 @@
     width: 10vw;
 }
 .lista_menu_tit{
-    color: rgb(200, 139, 66);
+    color: rgb(158, 148, 135);
     font-weight: 800px;
     
 }
@@ -49,4 +49,18 @@
     height: 100px;
     display: block; 
     top: 15px; 
+}
+.slogan{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: black
+}
+.nome{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
 }
