@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade do dia 13.09</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: red;
+            font-size: 65px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h2 {
+            color: aquamarine;
+            font-size: 40px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+    </style>
+
+<body>
+
+    <div class="h1">
+        <h1>Atividade do dia 13.09 para criar um algoritmo de calculo de médias</h1>
+    </div>
+
+    <div class="h2">
+        <h2>Calculo de Notas</h2>
+    </div>
+
+    <script>
+
+        var nome = (prompt('Informe o seu nome'))
+        parseFloat(nome)
+
+        var bin1 = Number(prompt('Informe a primeira nota'))
+        parseFloat(bin1)
+
+        var bin2 = Number(prompt('Informe a segunda nota'))
+        parseFloat(bin2)
+
+        var bin3 = Number(prompt('Informe a terceira nota'))
+        parseFloat(bin3)
+
+        var media = (bin1 + bin2 + bin3) / 3
+
+        if (media >= 6) {
+            alert(nome + ' você foi aprovado - sua média é ' + media)
+        } else {
+            alert(nome + ' você foi reprovado - sua média é ' + media)
+        }
+
+    </script>
+
+</body>
+
+</head>
+
+</html>
