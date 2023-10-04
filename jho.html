@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula do dia 27/09</title>
+    <style>
+        body{
+            background-color: beige
+        }
+        h1{
+            color: rgb(0, 0, 0);
+            font-size: 2.9em;
+            text-align: center;
+        }
+        .botao{
+
+            display: grid;
+            justify-content: space-around;
+            margin-top: 70px;
+        }
+        .botao1{
+            padding: 40px 80px;
+            margin-top: 50px;
+            align-self: center;
+            background-color: rgb(24, 127, 89);
+            color: antiquewhite;
+            border-color: rgb(79, 188, 148);
+            border-radius: 30px;
+            border-style:double;
+        }
+        .botao1:hover{
+            background-color: rgb(197, 44, 177);
+            border-color: rgb(220, 114, 206);
+            text-transform: uppercase;
+            transition: all .2s;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: moveInBottom 5s ease-out;
+            animation-fill-mode: backwards;
+
+        }
+        .botao2{
+            padding: 40px 80px;
+            margin-top: 50px;
+            align-self: center;
+            background-color: rgb(23, 54, 126);
+            color: antiquewhite;
+            border-color: rgb(114, 148, 231);
+            border-radius: 30px;
+            border-style:dashed;
+        }
+        .botao2:hover{
+            background-color: rgb(220, 138, 37);
+            border-color: rgb(231, 179, 115);
+        }
+        .botao3{
+            padding: 40px 80px;
+            margin-top: 50px;
+            align-self: center;
+            background-color: rgb(170, 26, 26);
+            color: antiquewhite;
+            border-color: rgb(200, 85, 85);
+            border-radius: 30px;
+            border-style:double;
+        }
+        .botao3:hover{
+            background-color: rgb(21, 127, 58);
+            border-color: rgb(98, 184, 128);
+        }
+    </style>
+</head>
+<body>
+    <h1>Layout com botões animados</h1>
+   <div class="botao">
+        <button class="botao1" onclick=window.location.href='https://www.youtube.com/?gl=BR'>Youtube</button>
+        <button class="botao2" onclick=window.location.href='https://twitter.com/X'>X</button>
+        <button class="botao3" onclick=window.location.href='https://www.playstation.com/pt-br/'>Playstation</button>
+
+   </div>
+
+    <script>
+        function clicar(botao){
+            var a = window.document.getElementById('area')
+            a.innerText='clicou'
+            a.style.background= "red" }
+            object.style.textAlign = "center"
+        function entrar(){
+            var e = window.document.getElementById('area')
+            e.innerText='entrou'
+            e.style.background= "yellow" }
+        function sair(){
+            var e = window.document.getElementById('area')
+            e.innerText='saiu'
+            e.style.background= "blue" }
+        
+    </script>
+</body>
+</html>
