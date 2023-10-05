@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: beige;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            font-size: 2.9em;
+            text-align: center;
+        }
+
+        .botao1 {
+            padding: 40px 80px;
+            margin-top: 50px;
+            align-self: center;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .botao2 {
+            padding: 40px 80px;
+            margin-top: 50px;
+            align-self: center;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .botao3 {
+            padding: 40px 80px;
+            margin-top: 50px;
+            align-self: center;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Layout com botões animados</h1>
+    <div>
+        <a href='https://www.youtube.com/?gl=BR'><button class="botao1" id="botao1" onmouseenter="entrar1()" onmouseout="sair1()">Entre
+                no Youtube!!</button></a>
+    </div>
+    <div>
+        <a href='https://twitter.com/X'><button class="botao2" id="botao2" onmouseenter="entrar2()" onmouseout="sair2()">Veja o que as
+                pessoas comentam no X!!</button></a>
+    </div>
+    <div>
+        <a href='https://www.playstation.com/pt-br/'><button class="botao3" id="botao3" onmouseenter="entrar3()"
+                onmouseout="sair3()">Veja os novos jogos!!</button></a>
+    </div>
+
+    <script>
+        function entrar1() {
+            var e = window.document.getElementById('botao1')
+            e.innerText = 'Youtube'
+            e.style.background = 'red'
+        }
+        function sair1() {
+            var s = window.document.getElementById('botao1')
+            s.innerText = 'Entre no Youtube!!'
+            s.style.background = 'yellow'
+        }
+        function entrar2() {
+            var e = window.document.getElementById('botao2')
+            e.innerText = 'X'
+            e.style.background = 'white'
+        }
+        function sair2() {
+            var s = window.document.getElementById('botao2')
+            s.innerText = 'Veja o que as pessoas comentam no X!!'
+            s.style.background = 'purple    '
+        }
+        function entrar3() {
+            var e = window.document.getElementById('botao3')
+            e.innerText = 'Playstation'
+            e.style.background = 'pink'
+        }
+        function sair3() {
+            var s = window.document.getElementById('botao3')
+            s.innerText = 'Veja os novos jogos!!'
+            s.style.background = 'orange'
+        }
+    </script>
+</body>
+
+</html>
